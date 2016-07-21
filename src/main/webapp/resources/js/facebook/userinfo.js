@@ -17,6 +17,10 @@ function getUserTimeline() {
     }, function(response) {
     	var rawData = response.data;
     	
+    	if(!rawData) {
+    		console.log('empty data');
+    	}
+    	
     	rawData.forEach(function(data) {
     		/* 체이닝으로 DOM을 생성한다. */
     		$('<div></div>').append('<img src="' + data.picture +'">')
