@@ -1,4 +1,4 @@
-package com.madplay.test;
+package com.madplay.controller;
 
 import java.util.Locale;
 
@@ -14,9 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController {
+public class MainController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -31,7 +31,7 @@ public class HomeController {
 		ModelAndView mv = new ModelAndView();
 		
 		/* View(jsp)의 이름을 지정한다. */
-		mv.setViewName("home");
+		mv.setViewName("main");
 		
 		/* View에 전달할 Model */
 		String nickName = "madplay";
