@@ -63,7 +63,7 @@
 
 	<div>
 		<!-- Standard button -->
-		<button type="button" class="btn btn-default">Default</button>
+		<button type="button" class="btn btn-default">디폴트</button>
 	</div>
 
 </body>
