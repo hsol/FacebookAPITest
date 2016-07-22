@@ -16,7 +16,6 @@ function getUserTimeline() {
         limit: 15 /* 개수 제한 */
     }, function(response) {
     	var rawData = response.data;
-    	
     	if(!rawData) {
     		console.log('empty data');
     	}
